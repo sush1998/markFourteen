@@ -24,18 +24,24 @@ btnTellMe.addEventListener('click',(event)=>
 
     if(resultPercent>0.00)
     {
-        result_msg.textContent="Woah!! Your are making a Profit 📈 :D"
+        result_msg.textContent="Woah!! Your are making a Profit 📈 😃"
         section_output.style.display="block"
+        result_msg.style.backgroundColor="#25F500"
+        result_msg.style.color="#000000";
     }
     else if(resultPercent<0)
     {
-        result_msg.textContent="Opps!! Your are incurring a Loss 📉 :("
+        result_msg.textContent="Opps!! Your are incurring a Loss 📉 😭"
         section_output.style.display="block"
+        result_msg.style.backgroundColor="#F53A25"
+        result_msg.style.color="#000000";
 
     }
     else if(resultPercent===0.00)
     {
-        result_msg.textContent="No pain No gain, and no gain no pain ;)"
+        result_msg.textContent="No pain No gain, and no gain no pain 😉"
+        result_msg.style.backgroundColor="#0307fc"
+        result_msg.style.color="#FFFFFF";
         section_output.style.display="none"
     }
     
