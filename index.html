@@ -14,9 +14,9 @@
     </header>
     <main>
         <form class="section_input">
-            <input type="number" id="priceBuy" placeholder="Buy Price" required>
-            <input type="number" id="quantity" placeholder="Quantity" required>
-            <input type="number" id="priceCurrent" placeholder="Current price" required>
+            <input type="number" id="priceBuy" min="0" placeholder="Buy Price" required>
+            <input type="number" id="quantity" min="0" placeholder="Quantity" required>
+            <input type="number" id="priceCurrent" min="0" placeholder="Current price" required>
             <button id="btn-tell-me">Tell me</button>
         </form>
         <div class="output">
@@ -29,7 +29,7 @@
         
     </main>
     <footer>
-        Made by love by Sushant Mahalle
+        Built with <span id="heart">❤</span> by <a href="https://github.com/sush1998" id="my_name">Sushant Mahalle</a>
     </footer>
     <script src="index.js"></script>
 </body>
