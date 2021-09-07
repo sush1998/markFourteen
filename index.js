@@ -2,7 +2,9 @@ const priceBuyInput=document.querySelector('#priceBuy')
 const quantityInput=document.querySelector('#quantity')
 const priceCurrentInput=document.querySelector('#priceCurrent')
 const btnTellMe=document.querySelector('#btn-tell-me')
+const result_msg=document.querySelector('#result_msg')
 
+const section_output=document.querySelector(".section_output")
 const outputAbsolute=document.querySelector("#absolute")
 const outputPercentage=document.querySelector('#percentage')
 btnTellMe.addEventListener('click',()=>
@@ -18,4 +20,21 @@ btnTellMe.addEventListener('click',()=>
     let resultPercent=(priceCurrent-priceBuy)/(priceBuy/100)
     console.log(resultPercent)
     outputPercentage.textContent=resultPercent.toFixed(2)
+
+    if(resultPercent>0.00)
+    {
+        result_msg.textContent="Woah!! Your are making a Profit :D"
+    }
+    else if(resultPercent<0)
+    {
+        result_msg.textContent="Opps!! Your are incurring a Loss :("
+
+    }
+    else if(resultPercent===0.00)
+    {
+        result_msg.textContent="No pain No gain, and no gain no pain ;)"
+        section_output.style.display="none"
+    }
+    section_output.style.display="block"
+
 })
