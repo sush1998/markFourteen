@@ -23,11 +23,13 @@ btnTellMe.addEventListener('click',()=>
 
     if(resultPercent>0.00)
     {
-        result_msg.textContent="Woah!! Your are making a Profit :D"
+        result_msg.textContent="Woah!! Your are making a Profit 📈 :D"
+        section_output.style.display="block"
     }
     else if(resultPercent<0)
     {
-        result_msg.textContent="Opps!! Your are incurring a Loss :("
+        result_msg.textContent="Opps!! Your are incurring a Loss 📉 :("
+        section_output.style.display="block"
 
     }
     else if(resultPercent===0.00)
@@ -35,6 +37,6 @@ btnTellMe.addEventListener('click',()=>
         result_msg.textContent="No pain No gain, and no gain no pain ;)"
         section_output.style.display="none"
     }
-    section_output.style.display="block"
+    
 
 })
