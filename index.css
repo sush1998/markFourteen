@@ -71,3 +71,13 @@ footer
 {
     margin: auto;
 }
+#heart
+{
+    color: #F53A25;
+    font-weight: 800;
+}
+footer>a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+}
