@@ -7,8 +7,9 @@ const result_msg=document.querySelector('#result_msg')
 const section_output=document.querySelector(".section_output")
 const outputAbsolute=document.querySelector("#absolute")
 const outputPercentage=document.querySelector('#percentage')
-btnTellMe.addEventListener('click',()=>
+btnTellMe.addEventListener('click',(event)=>
 {
+    event.preventDefault();
     const priceBuy=parseFloat(priceBuyInput.value);
     const quantity=parseInt(quantityInput.value);
     const priceCurrent=parseFloat(priceCurrentInput.value)

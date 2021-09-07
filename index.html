@@ -13,16 +13,15 @@
         <p id="intro">Let's check how is your investment performing. 📊</p>
     </header>
     <main>
-        <div class="section_input">
-            <input type="number" id="priceBuy">
-            <input type="number" id="quantity">
-            <input type="number" id="priceCurrent">
+        <form class="section_input">
+            <input type="number" id="priceBuy" required>
+            <input type="number" id="quantity" required>
+            <input type="number" id="priceCurrent" required>
             <button id="btn-tell-me">Tell me!</button>
-        </div>
+        </form>
         <div class="output">
             <p id="result_msg"></p>
             <div class="section_output">
-                
                 <p id="input_Absolute">Absolute: <span id="absolute"></span> ₹</p>
                 <p id="input_Percentage">Percentage: <span id="percentage"></span> %</p>
             </div>
