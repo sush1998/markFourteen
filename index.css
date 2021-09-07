@@ -22,6 +22,7 @@ main
     margin: 2rem;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
 }
 
 .section_input,output,.section_output
@@ -44,11 +45,26 @@ main
 .section_output
 {
     display: none;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
-
+input
+{
+    width: 8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+button
+{
+    background-color:#0307fc;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
 input,button
 {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 
 footer
